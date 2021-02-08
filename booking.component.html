@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en">
+	
+<!-- Mirrored from dreamguys.co.in/demo/doccure/template/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 08:29:05 GMT -->
+<head>
+		<meta charset="utf-8">
+		<title>Doccure</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		
+		<!-- Favicons -->
+		<link href="/assets/img/favicon.png" rel="icon">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="/assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+		
+		<!-- Datetimepicker CSS -->
+		<link rel="stylesheet" href="/assets/css/bootstrap-datetimepicker.min.css">
+		
+		<!-- Full Calander CSS -->
+        <link rel="stylesheet" href="/assets/plugins/fullcalendar/fullcalendar.min.css">
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="/assets/css/style.css">
+	
+	</head>
+	<body>
+
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+		
+			<!-- Header -->
+			<app-header></app-header>
+			<!-- /Header -->	
+			
+			<!-- Breadcrumb -->
+			<div class="breadcrumb-bar">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col">
+							<nav aria-label="breadcrumb" class="page-breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Calendar</li>
+								</ol>
+							</nav>
+							<h2 class="breadcrumb-title">Calendar</h2>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- /Breadcrumb -->
+			
+			<!-- Page Content -->
+			
+			<div class="content">
+				
+				<div class="container-fluid">
+
+					<div class="row">
+						
+						<!-- Calendar -->
+						<div class="search-box">
+															
+								<div class="form-group search-info">
+									<h1>Choose Appointment Date</h1>
+									<input type=date class="form-control" [(ngModel)]="idoc.appointDate"><br>
+									<span style="font-size: 15px; color: red;">{{msg}}</span>
+								</div>
+								<!-- Submit Section -->
+							<div class="submit-section proceed-btn text-right">
+								<button class="btn btn-primary submit-btn" (click)="payment()">Proceed to Pay</button>
+							</div>
+							<!-- /Submit Section -->
+								
+							
+						</div>					  
+						<!-- /Calendar -->
+						
+					</div>
+
+				</div>
+			
+			</div>	
+			
+			<!-- /Page Content -->
+   
+
+			
+   
+			<!-- Footer -->
+			  <app-footer></app-footer>
+			<!-- /Footer -->	   
+		</div>
+		<!-- /Main Wrapper -->
+		
+		
+	  
+		<!-- jQuery -->
+		<script src="/assets/js/jquery.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+		<script src="/assets/js/popper.min.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
+		
+		<!-- Sticky Sidebar JS -->
+        <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+		
+		<!-- Datetimepicker JS -->
+		<script src="/assets/js/moment.min.js"></script>
+		<script src="/assets/js/bootstrap-datetimepicker.min.js"></script>
+		
+		<!-- Full Calendar JS -->
+        <script src="/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="/assets/plugins/fullcalendar/fullcalendar.min.js"></script>
+        <script src="/assets/plugins/fullcalendar/jquery.fullcalendar.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="/assets/js/script.js"></script>
+		
+	</body>
+
+<!-- Mirrored from dreamguys.co.in/demo/doccure/template/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 08:29:06 GMT -->
+</html>
